@@ -1,10 +1,8 @@
-# Retail Sales Analysis SQL Project
+# Retail Sales Analysis using SQL
 
 ## Project Overview
 
 This project demonstrates SQL skills for exploring, cleaning, and analyzing retail sales data. It involves setting up a database, performing exploratory data analysis (EDA), and answering business questions through SQL queries.
-
----
 
 ## Objectives
 
@@ -12,8 +10,6 @@ This project demonstrates SQL skills for exploring, cleaning, and analyzing reta
 2. **Data Cleaning**: Identify and remove records with missing values.
 3. **Exploratory Data Analysis (EDA)**: Understand sales data distribution and trends.
 4. **Business Analysis**: Answer specific business questions using SQL queries.
-
----
 
 ## Project Structure
 
@@ -37,8 +33,6 @@ CREATE TABLE retail_sales (
     total_sales DECIMAL(10,2)
 );
 ```
-
----
 
 ### 2. Data Exploration & Cleaning
 
@@ -66,8 +60,6 @@ WHERE sale_date IS NULL OR sale_time IS NULL OR customer_id IS NULL OR
       gender IS NULL OR age IS NULL OR category IS NULL OR 
       quantity IS NULL OR price_per_unit IS NULL OR cogs IS NULL;
 ```
-
----
 
 ### 3. Data Analysis & Insights
 
@@ -158,8 +150,6 @@ WITH shift_sales AS (
 SELECT shift, COUNT(*) AS total_orders FROM shift_sales GROUP BY shift;
 ```
 
----
-
 ## Findings & Insights
 
 - Customer demographics: Sales are distributed across different age groups and genders.
@@ -168,15 +158,11 @@ SELECT shift, COUNT(*) AS total_orders FROM shift_sales GROUP BY shift;
 - Top-spending customers: The highest spenders can be targeted for loyalty programs.
 - Category performance: Understanding top-performing categories aids inventory planning.
 
----
-
 ## Reports
 
 - Sales summary: Overview of total sales, customer demographics, and category performance.
 - Trend analysis: Sales fluctuations across months and shifts.
 - Customer insights: Identifying high-value customers and their purchase behavior.
-
----
 
 ## Conclusion
 
